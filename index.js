@@ -63,5 +63,16 @@ function randomizer() {
             passwordTwo.textContent = totalCharactersTwo;
         }
     
-    } else if ()
+    } else if (onlyLetters && isNumbersSelected === false && isSymbolsSelected === false) {
+        for (let i = 0; i < 15; i++) {
+            let randomNumberOne = Math.floor(Math.random() * charactersNoSymbolsNoNumbers.length);
+            let randomNumberTwo = Math.florr(Math.random() * charactersNoSymbolsNoNumbers.length);
+            let randomCharacterOne = charactersNoSymbolsNoNumbers[randomNumberOne];
+            let randomCharacterTwo = charactersNoSymbolsNoNumbers[randomNumberTwo];
+            totalCharactersOne += randomCharacterOne;
+            totalCharactersTwo += randomCharacterTwo;
+            passwordOne.textContent = totalCharactersOne;
+            passwordTwo.textContent = totalCharactersTwo;
+        }
+    }
 }
