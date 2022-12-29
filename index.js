@@ -29,3 +29,27 @@ let containerDesc = document.querySelector(".desc-dark");
 let hr = document.querySelector(".hr-dark");
 let copyOne = document.getElementById("copy-text-one");
 let copyTwo = document.getElementById("copy-text-two");
+
+let totalCharactersOne = [];
+let totalCharactersTwo = [];
+
+funciton randomizer() {
+    totalCharactersOne = [];
+    totalCharactersTwo = [];
+    if (withoutNumbers && withoutSymbols) {
+        onlyLetters = true;
+        bothSymbolsNumbers = false;
+    } else if (withoutNumbers && withoutSymbols === false) {
+        onlyLettersSymbols = true;
+        bothSymbolsNumbers = false;
+    } else if (withoutNumbers === false && withoutSymbols) {
+        onlyLettersNumbers = true;
+        bothSymbolsNumbers = false;
+    } esle {
+        bothSymbolsNumbers = true;
+    }
+
+    console.log(isNumbersSelected, isSymbolsSelected, bothSymbolsNumbers)
+
+    
+}
