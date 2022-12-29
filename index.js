@@ -45,11 +45,23 @@ function randomizer() {
     } else if (withoutNumbers === false && withoutSymbols) {
         onlyLettersNumbers = true;
         bothSymbolsNumbers = false;
-    } esle {
+    } else {
         bothSymbolsNumbers = true;
     }
 
     console.log(isNumbersSelected, isSymbolsSelected, bothSymbolsNumbers)
 
+    if (bothSymbolsNumbers && isNumbersSelected && isSymbolsSelected) {
+        for (let i = 0; i < 15; i++) {
+            let randomNumberOne = Math.floor(Math.random() * characters.length);
+            let randomNumberTwo = Math.floor(Math.random() * characters.length);
+            let randomCharacterOne = characters[randomNumberOne];
+            let randomCharacterTwo = characters[randomNumberTwo];
+            totalCharactersOne += randomCharacterOne;
+            totalCharactersTwo += randomCharacterTwo;
+            passwordOne.textContent = totalCharactersOne;
+            passwordTwo.textContent = totalCharactersTwo;
+        }
     
+    } else if ()
 }
