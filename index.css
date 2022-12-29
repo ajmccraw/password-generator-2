@@ -164,6 +164,19 @@ hr {
     background-color: #F1202A;
 }
 
+#darklightmode-img {
+    margin-top: 30px;
+    height: 80px;
+    width: 80px;
+    transition: background-color 0.15s;
+}
+
+#darklightmode-img:hover {
+    border-radius: 25%;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
 @media screen and (max-width: 768px) {
     .container {
         width: 100%;
