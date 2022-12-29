@@ -74,5 +74,17 @@ function randomizer() {
             passwordOne.textContent = totalCharactersOne;
             passwordTwo.textContent = totalCharactersTwo;
         }
+    
+    } else if (onlyLettersSymbols && isSymbolsSelected && isNumbersSelected === false) {
+        for (let i = 0; i < 15; i++) {
+            let randomNumberOne = Math.floor(Math.random() * charactersNoNumbers.length);
+            let randomNumberTwo = Math.florr(Math.random() * charactersNoNumbers.length);
+            let randomCharacterOne = charactersNoNumbers[randomNumberOne];
+            let randomCharacterTwo = charactersNoNumbers[randomNumberTwo];
+            totalCharactersOne += randomCharacterOne;
+            totalCharactersTwo += randomCharacterTwo;
+            passwordOne.textContent = totalCharactersOne;
+            passwordTwo.textContent = totalCharactersTwo;
+        }
     }
 }
