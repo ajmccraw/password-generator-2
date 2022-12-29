@@ -33,7 +33,7 @@ let copyTwo = document.getElementById("copy-text-two");
 let totalCharactersOne = [];
 let totalCharactersTwo = [];
 
-funciton randomizer() {
+function randomizer() {
     totalCharactersOne = [];
     totalCharactersTwo = [];
     if (withoutNumbers && withoutSymbols) {
